@@ -5,11 +5,11 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route("/S&P500")
+@app.route("/S&P500.html")
 def two():
     return render_template("S&P500.html")
     
-@app.route("/S&P500_plate")
+@app.route("/S&P500_plate.html")
 def three():
     return render_template("S&P500_plate.html")
 
