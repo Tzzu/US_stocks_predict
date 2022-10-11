@@ -33,7 +33,7 @@
                         <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Other</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact" >Other</a></li>
-                        <!-- <li class="nav-item"><a class="nav-link" href="#contact" id="to002">To002</a></li> -->
+                        <!-- <li class="nav-item"><a class="nav-link" href="#contact" id="S&P500">S&P500</a></li> -->
                     </ul>
                 </div>
             </div>
@@ -43,9 +43,9 @@
             <div class="container">
                 <div class="masthead-subheading">Welcome!</div>
                 <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <button class="btn btn-secondary btn-xl text-uppercase" id="to002">標普500指數</button>
-                <a class="btn btn-secondary btn-xl text-uppercase" href="#news">道瓊工業指數</a>
-                <a class="btn btn-secondary btn-xl text-uppercase" href="#news">那斯達克指數</a>
+                <button class="btn btn-secondary btn-xl text-uppercase" id="S&P500">標普500指數</button>
+                <button class="btn btn-secondary btn-xl text-uppercase" id="dowjones30">道瓊工業指數</button>
+                <button class="btn btn-secondary btn-xl text-uppercase" id="nasdaq100">那斯達克指數</button>
             </div>
         </header>
         <!-- News-->
@@ -611,9 +611,17 @@
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
         <script>
-            const two =  document.getElementById("to002")
-            two.addEventListener("click",function(){
+            const SP500 =  document.getElementById("S&P500")
+            SP500.addEventListener("click",function(){
                 window.location.assign("./S&P500.html")
+            })
+            const DJ30 =  document.getElementById("dowjones30")
+            DJ30.addEventListener("click",function(){
+                window.location.assign("./dowjones30.html")
+            })
+            const NQ100 =  document.getElementById("nasdaq100")
+            NQ100.addEventListener("click",function(){
+                window.location.assign("./nasdaq100.html")
             })
         </script>
     </body>
